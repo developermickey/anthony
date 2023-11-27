@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+#bg-overlay
+{
+	position: fixed;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#enlarged-picture-outer-frame
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 1em;
+}
+
+#enlarged-picture-close-button
+{
+	position: absolute;
+	z-index: 10;
+	top: -10px;
+	right: -10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-image: url(img/enlarged-picture-close.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px -1px #000;
+	opacity: 0.6;
+	transition: ease-in-out;
+	transition-duration: 200ms;
+	transition-property: opacity;
+}
+#enlarged-picture-close-button:hover
+{
+	opacity: 1;	
+}
+
+#enlarged-picture-frame
+{
+	position: relative;
+	padding: 10px;
+	display: block;
+	vertical-align: middle;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	overflow: visible;
+	box-shadow: 0px 0px 15px -2px #000;
+}
+
+#enlarged-picture-inner-frame
+{
+	display: block;
+	position: relative;
+	line-height: normal;
+	background-color: #fff;
+	padding: 1em;
+}
+
+#enlarged-picture-frame img
+{
+	position: relative;
+	vertical-align: middle;
+	max-height: 32px;
+	max-width: 32px;
+	height: 32px;
+	width: 32px;
+	transition: ease-in-out;
+	transition-duration: 1s;
+	transition-property: all;
+}
